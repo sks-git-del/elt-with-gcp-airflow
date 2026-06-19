@@ -1,36 +1,3 @@
-"""
-Author: [Vishal Bulbule]
-Date: [2024-12-10]
-Purpose: This DAG script demonstrates how to load data from GCS to BigQuery 
-         and create country-specific tables and views for reporting. 
-         The code is featured in the YouTube video: "[Video Title]". 
-
-# NOTE:
-This script contains placeholder values that you need to replace with your actual values 
-to make it functional in your environment.
-
-1. Replace the following placeholders:
-   - `project_id`: Your Google Cloud Project ID.
-   - `dataset_id`: The name of the staging dataset where raw data will be loaded.
-   - `transform_dataset_id`: The dataset name where transformed data will be stored.
-   - `reporting_dataset_id`: The dataset name for the final reporting views.
-   - `bucket`: The name of the GCS bucket where your CSV file is stored.
-   - `object`: The path to the CSV file in the GCS bucket.
-   - `countries`: List of country names (modify as per your requirements).
-
-2. Ensure the following:
-   - The service account used for Airflow has permissions for GCS and BigQuery operations.
-   - The datasets (`staging_dataset`, `transform_dataset`, `reporting_dataset`) exist in BigQuery.
-
-3. Adjust the DAG schedule and other parameters as needed for your use case.
-
-For more details, refer to the video description or comments section.
-
-DISCLAIMER:
-This code is for educational purposes only. Modify and test it thoroughly before using it in production.
-
-Happy Coding!
-"""
 
 
 from datetime import datetime
